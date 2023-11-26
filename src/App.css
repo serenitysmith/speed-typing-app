@@ -1,38 +1,84 @@
-.App {
+html, body {
+  background: black;
+  color: #00b800;
+  margin: 0;
+  padding: 0;
+  padding-top: 10px;
+  font-family: 'Press Start 2P', cursive;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body {
+  font-weight: 400;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+button {
+  font-family: 'Press Start 2P', cursive;
+  display: block;
+  margin: 0 auto;
+  border: none;
+  background: #00b800;
+  padding: 10px 20px;
+  text-transform: uppercase;
+  outline: none;
+  cursor: pointer;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+button:disabled {
+   cursor: not-allowed;
+}
+
+h1 {
+  font-size: 21px;
+  text-align: center;
+}
+
+textarea {
+  font-family: 'Press Start 2P', cursive;
+  border: 3px solid black;
+  width: 90%;
+  margin: 0 auto;
+  outline: none;
+  height: 200px;
+  background: #00b800;
+  padding: 10px;
+}
+
+textarea:disabled {
+  background: #a5a2a2;
+}
+
+/* Styling for Footer */
+footer {
+  background: transparent;
+  color: #00b800;
+  text-align: center;
+  padding: 3em 0 0 0;
+}
+
+footer p {
+  font-size: 12px;
+}
+
+#love {
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
+  margin-top: 15px;
 }
 
-.App-link {
-  color: #61dafb;
+#love a {
+  color: rgb(40, 216, 240);
+  text-decoration: none;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+#love > span {
+  font-weight: 400;
+  font-size: 12px;
+  color: #fff;
+}
+
+#love > img {
+  width: 30px;
+  padding: 2px 6px 4px;
 }
